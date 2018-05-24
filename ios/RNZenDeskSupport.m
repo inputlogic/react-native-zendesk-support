@@ -44,11 +44,10 @@ RCT_EXPORT_METHOD(setupIdentity:(NSDictionary *)identity){
 }
 
 RCT_EXPORT_METHOD(showHelpCenterWithOptions:(NSDictionary *)options) {
-    //Setup navbar
-    NSDictionary *navbarAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+   NSDictionary *navbarAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                       [UIColor whiteColor] ,UITextAttributeTextColor, nil];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.97 green:0.15 blue:0.59 alpha:1.0];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.97 green:0.10 blue:0.59 alpha:1.0]];
     [[UINavigationBar appearance] setTitleTextAttributes:navbarAttributes];
     [[UISearchBar appearance] setBarTintColor:[UIColor colorWithRed:208.0f/255.0f green:218.0f/255.0f blue:224.0f/255.0f alpha:1.0f]];
     //Style Support SDK
